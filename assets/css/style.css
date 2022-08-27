@@ -43,6 +43,23 @@ header nav ul li a {
     font-size: 22px;
  }
 
+ .section-title {
+  font-size: 55px;
+  color:#024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  display: inline-block;
+  border-bottom: 3px solid;
+ }
+
+ .primary-border {
+  border-color: #fce138;
+ }
+
+ .secondary-border {
+  border-color: #39a6b2
+ }
+
  .intro {
   text-align: center;
  }
@@ -55,15 +72,7 @@ We chose to use the inline-block value instead of the inline value so it can hav
 It's now an inline element, but things like padding still behave like they would on block elements. 
 Coupled with the text-align property from before, we now have a center-aligned heading with an 
 appropriately sized border. */
- .intro h2 {
-  display: inline-block;
-  font-size: 55px;
-  color:#024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  border-bottom: 3px solid;
-  border-color: #fce138;
- }
+
 
  /* But what does auto mean? Essentially, it tells the browser to calculate the margins for us. 
  When the browser is asked to do this on both sides of an element, it will do its best to make them even, 
@@ -75,6 +84,25 @@ appropriately sized border. */
   font-size: 20px;
   margin: 0 auto;
  }
+
+ .steps {
+  text-align: center;
+  background: #fce138;
+ }
+
+.steps span {
+  font-size: 38px;
+}
+
+ .steps div {
+  margin-bottom: 80px;
+ }
+
+ .steps img {
+  width: 15%;
+  margin: 10px 0;
+ }
+
   footer {
     background: #fce138;
     width: 100%;
@@ -88,6 +116,16 @@ appropriately sized border. */
     margin: 0;
  }
 
+ .steps h3 {
+  color: #024e76;
+  font-size: 46px;
+  margin-top: 10px;
+ }
+
+ .steps p {
+  color: #39a6b2;
+  font-size: 23px;
+ }
   footer div {
     float: right;
     line-height: 1.5;
