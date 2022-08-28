@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="./assets/css/style.css" />
   <meta charset="UTF-8" />
   <title>Run Buddy</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <nav>
       <!-- Unordered list element -->
       <ul>
-        <!--List item element -->
+        <!-- List item element-->
         <li>
           <!-- Anchor element -->
           <a href="#what-we-do">What We Do</a>
@@ -36,11 +36,12 @@
     </nav>
   </header>
 
+
   <!-- hero/jumbotron -->
   <section class="hero">
     <div class="hero-form">
       <h3>Get Started Today</h3>
-      <p> Fill out this form and one of our trainers will schedule a consult</p>
+      <p>Fill out this form and one of our trainers will schedule a consult</p>
       <form>
         <label for="name">Enter full name:</label>
         <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
@@ -81,7 +82,6 @@
 
   <!-- "what you do" section -->
   <section id="what-you-do" class="steps">
-    <section>
       <h2 class="section-title secondary-border">What You Do</h2>
       <div>
         <img src="./assets/images/step-1.svg" alt="" />
@@ -103,7 +103,8 @@
 
       <div>
         <img src="./assets/images/step-4.svg" alt="" />
-        <h3>Step 4: See Results.</h3>
+        <h3>Step 4: <span>See Results.</span></h3>
+        <p>Bi-weekly checkins with your trainer will keep you focused</p>
       </div>
     </section>
 
@@ -118,9 +119,8 @@
           <h4>Speed / Strength</h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe
-            culpa
-            sed
-            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+            culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis
+            repellat!
           </p>
         </div>
       </article>
@@ -157,31 +157,33 @@
     </section>
 
 
-  <!-- "reach out" section -->
-  <section id="reach-out">
-    <h2 class="section-title secondary-border">Reach Out</h2>
-    <div class="contact-info">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.2600569020633!2d-117.8696316492959!3d33.75394514074351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd9a8bea277f7%3A0x75399bf358a80caa!2s55%20N%20Main%20St%2C%20Santa%20Ana%2C%20CA%2092701!5e0!3m2!1sen!2sus!4v1661639581751!5m2!1sen!2sus"
-        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-      <div>
-        <h3>Run Buddy</h3>
-        <p>
-          Any questions or concerns before signing up?
-          <br />
-          Let us know and we'll be happy to talk to you!
-        </p>
-        <address>
-          55 N Main St, <br/>
-          Santa Ana, CA <br/>
-          92701<br/>
-          P: 555.RUN.BUDZ (555.786.2839)<br />
-          E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-        </address>
+    <!-- "reach out" section -->
+    <section id="reach-out" class="contact">
+      <h2 class="section-title secondary-border">Reach Out</h2>
+      <div class="contact-info">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.2600569020633!2d-117.8696316492959!3d33.75394514074351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd9a8bea277f7%3A0x75399bf358a80caa!2s55%20N%20Main%20St%2C%20Santa%20Ana%2C%20CA%2092701!5e0!3m2!1sen!2sus!4v1661639581751!5m2!1sen!2sus"
+          width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <div>
+          <h3>Run Buddy</h3>
+          <p>
+            Any questions or concerns before signing up?
+            <br />
+            Let us know and we'll be happy to talk to you!
+          </p>
+          <!-- FIX THIS HAVING CONSOLE ISSEU THX AND everything else -->
+          <address>
+
+            55 N Main St, <br />
+            Santa Ana, CA <br />
+            92701<br />
+            P: 555.RUN.BUDZ (555.786.2839)<br />
+            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+          </address>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
     <!-- footer -->
