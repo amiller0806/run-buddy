@@ -1,13 +1,14 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
+
 
 /* HEADER / NAV BAR STYLES START */
 
@@ -21,9 +22,9 @@ header {
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
 }
 
 header a {
@@ -56,11 +57,11 @@ header nav ul li a {
 /* FOOTER STYLES START */
 footer {
   background: #fce138;
-  width: 100%;
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 footer h2 {
@@ -79,12 +80,12 @@ footer a {
 }
 /* END FOOTER STYLES */
 
-/* STYLE ALL SECTION TAGS*/
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+/* HERO STYLES START */
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
@@ -117,7 +118,6 @@ section {
   color: #024e76;
   width: 40%;
   margin: 3.5%;
-  
 }
 
 .hero-form h3 {
@@ -135,7 +135,7 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -148,14 +148,15 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-}
-/* Hero STYLES END*/
+} 
+/* HERO STYLES END */
 
-/* SECTION STYLES START*/
+
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
-  color: #024e76;
   border-bottom: 3px solid;
+  color: #024e76;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -169,23 +170,23 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
-/* SECTION STYLES END */
+/* SECTION TITLE STYLES END */
 
-/* WHAT YOU DO STYLES START*/
-.intro {
-  text-align: center;
-}
+/* WHAT WE DO STYLES */
 
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
-  font-size: 20px;
   margin: 0 auto;
+  font-size: 20px;
   text-align: center;
 }
+/* WHAT YOU DO STYLES END */
 
-.steps {
+
+/* WHAT YOU DO STYLES START */
+.steps { 
   background: #fce138;
 }
 
@@ -201,9 +202,9 @@ section {
 }
 
 .step h3 {
-  flex: 1 30%;
   color: #024e76;
   font-size: 46px;
+  flex: 1 30%;
 }
 
 .step-info {
@@ -215,7 +216,7 @@ section {
 
 .step-img {
   flex: 1 12%;
-  margin-right: 20%;
+  margin-right: 20px;
 }
 
 .step-img img {
@@ -236,18 +237,18 @@ section {
   line-height: 1.5;
   color: #024e76;
 }
+
 /* WHAT YOU DO STYLES END */
 
-
-/* MEET THE TRAINERS START*/
+/* MEET THE TRAINERS START */
 .trainers {
   width: 100%;
   margin: 0 auto;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-/* If all flexbox children have a value of flex: 1, that means they'll share any extra space evenly. */
+
 .trainer {
   margin: 20px;
   flex: 1;
@@ -261,6 +262,7 @@ section {
 
 .trainer-bio {
   padding: 25px;
+  line-height: 1.3;
 }
 
 .trainer-bio h3 {
@@ -275,7 +277,6 @@ section {
 
 .trainer-bio p {
   font-size: 17px;
-  line-height: 1.3;
 }
 /* TRAINER STYLES END */
 
@@ -324,7 +325,7 @@ section {
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color:#024e76;
+  color: #024e76;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
@@ -335,7 +336,7 @@ section {
   border: none;
   background: #fce138;
   color: #024e76;
-  text-align:center;
+  text-align: center;
   padding: 15px 0;
   font-size: 16px;
 }
@@ -343,6 +344,7 @@ section {
 .contact-info a {
   color: #fce138;
 }
+
 
 /* REACH OUT STYLES END */
 
@@ -361,17 +363,108 @@ section {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
- 
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
   }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
- 
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
 }
