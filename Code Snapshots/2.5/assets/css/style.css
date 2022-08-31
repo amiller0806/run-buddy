@@ -1,11 +1,9 @@
-
 :root {
   --primary-color: #fce138;
   --secondary-color: #024e76;
   --tertiary-color: #39a6b2;
-
-
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +29,6 @@ header {
   top: 0;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
   z-index: 9999;
@@ -48,7 +45,6 @@ header h1 {
 header a {
   text-decoration: none;
   color: var(--primary-color);
-
 }
 
 header nav {
@@ -105,7 +101,6 @@ footer div {
 footer a {
   color: var(--secondary-color);
 }
-
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
@@ -117,13 +112,12 @@ section {
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .hero-cta {
@@ -156,11 +150,11 @@ section {
 .hero-form button:hover {
   background-color: var(--tertiary-color);  
 }
+
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
-
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -172,7 +166,7 @@ section {
   font-size: 16px;
   color: var(--secondary-color);
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
 }
@@ -193,20 +187,10 @@ section {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-}
+} 
 
 .checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
-}
-
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
-  content: none;
-}
-
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
-  content: "";
 }
 
 .checkbox-wrapper label, .radio-wrapper label {
@@ -220,51 +204,58 @@ section {
   content: "";
   height: 20px;
   width: 20px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid var(--secondary-color);
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid var(--secondary-color);  
   position: absolute;
   top: -4px;
   left: -30px;
 }
 
-  .radio-wrapper label::before {
-    border-radius: 50%;
-  }
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
 
-  .radio-wrapper label::after {
-    content: "";
+.radio-wrapper label::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+}
 
-height: 20px;
-width: 20px;
-border-radius: 50%;
-background: var(--secondary-color);
-position: absolute;
-left: -29px;
-top: -3px;
-background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
 
-  }
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
 
-  .checkbox-wrapper label::after {
-    content: "";
-    height: 6px;
-    width: 14px;
-    border-left: 2px solid var(--secondary-color);
-border-bottom: 2px solid var(--secondary-color);
-position: absolute;
-left: -26px;
-top: 1px;
-transform: rotate(-58deg);
-  }
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
+}
+/* HERO STYLES END */
 
 
-/* Hero STYLES END*/
-
-/* SECTION STYLES START*/
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
-  color: var(--secondary-color); 
   border-bottom: 3px solid;
+  color: var(--secondary-color);
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -278,13 +269,7 @@ transform: rotate(-58deg);
 .secondary-border {
   border-color: var(--tertiary-color);
 }
-
-/* SECTION STYLES END */
-
-/* WHAT YOU DO STYLES START*/
-.intro {
-  text-align: center;
-}
+/* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
 .intro p {
@@ -297,7 +282,9 @@ transform: rotate(-58deg);
 }
 /* WHAT WE DO STYLES END */
 
-.steps {
+
+/* WHAT YOU DO STYLES START */
+.steps { 
   background: var(--primary-color);
 }
 
@@ -309,16 +296,14 @@ transform: rotate(-58deg);
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--tertiary-color); 
 }
-
 
 .step:last-child {
   border-bottom: none;
 }
 
 .step h3 {
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
   font-size: 46px;
   flex: 1 30%;
 }
@@ -351,13 +336,11 @@ transform: rotate(-58deg);
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color:  var(--secondary-color);
+  color: var(--secondary-color);
 }
-
 /* WHAT YOU DO STYLES END */
 
-
-/* MEET THE TRAINERS START*/
+/* MEET THE TRAINERS START */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -366,11 +349,10 @@ transform: rotate(-58deg);
   justify-content: space-around;
 }
 
-/* If all flexbox children have a value of flex: 1, that means they'll share any extra space evenly. */
 .trainer {
   margin: 20px;
   flex: 1;
-  background:  var(--secondary-color);
+  background: var(--secondary-color);
   color: var(--primary-color);
 }
 
@@ -396,7 +378,6 @@ transform: rotate(-58deg);
 .trainer-bio p {
   font-size: 17px;
 }
-
 /* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
@@ -428,7 +409,7 @@ transform: rotate(-58deg);
 }
 
 .contact-info h3 {
-  color: var(--primary-color); 
+  color: var(--primary-color);
   font-size: 32px;
 }
 
@@ -457,11 +438,10 @@ transform: rotate(-58deg);
   outline: none;
 }
 
-
 .contact-form button {
   width: 100%;
   border: none;
-  background: var(--primary-color); 
+  background: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
   padding: 15px 0;
@@ -477,7 +457,6 @@ transform: rotate(-58deg);
 .contact-info a {
   color: var(--primary-color);
 }
-
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -524,7 +503,7 @@ transform: rotate(-58deg);
   .hero-cta, .hero-form {
     width: 100%;
   }
-
+  
   .hero-cta {
     text-align: center;
   }
@@ -532,19 +511,20 @@ transform: rotate(-58deg);
   .section-title {
     width: 80%;
   }
-
+  
   .trainer {
     flex: 0 70%;
   }
-
+  
   .contact-info iframe{
     flex: 1 100%;
   }
+}
 
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    section {
-      padding: 30px 15px;
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
   }
 
   .step h3 {
@@ -566,17 +546,16 @@ transform: rotate(-58deg);
   }
 
   .step-text {
-    flex: 100%;
+    flex: 100%;  
   }
 
   .trainer-bio h3, .trainer-bio h4 {
     display: block;
   }
 }
-}
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
   .hero-form button {
     width: 100%;
   }
@@ -584,9 +563,11 @@ transform: rotate(-58deg);
   .section-title {
     width: 95%;
   }
+
   .intro p {
     width: 100%;
   }
+
   .trainer {
     flex: 0 100%;
   }
