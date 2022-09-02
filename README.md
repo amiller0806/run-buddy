@@ -10,9 +10,12 @@ A website that offers fitness training services.
 * CSS
 
 ## Screenshots of deployed application 
-![Screenshot of header, nav bar, & hero image](images/header-navbar-hero.jpg)
-![Screenshot of articles, search-engine optimization & online reputation management, & sidebar](images/articles-sidebar.jpg)
-![Screenshot of article  social media marketing, the sidebar, brand awareness & "cost management", & the footer](images/article-sidebar-footer.jpg)
+![Screenshot of header, sticky nav bar, hero image, & hero form](assets/images/header_hero-form.jpg)
+![Screenshot of sticky nav bar and 'What We Do' section](assets/images/what-we-do.jpg)
+![Screenshot of sticky nav bar & 'What You Do' section](assets/images/what-you-do.jpg)'
+![Screenshot of sticky nav bar, Reach Out section, and footer](assets/images/footer_reach-out.jpg)
+
+
 
 ## Link to Repository
 https://github.com/amiller0806/run-buddy/ 
