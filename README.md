@@ -14,6 +14,8 @@ A website that offers fitness training services.
 ![Screenshot of articles, search-engine optimization & online reputation management, & sidebar](images/articles-sidebar.jpg)
 ![Screenshot of article  social media marketing, the sidebar, brand awareness & "cost management", & the footer](images/article-sidebar-footer.jpg)
 
+## Link to Repository
+https://github.com/amiller0806/run-buddy/ 
 ## Website
 https://amiller0806.github.io/run-buddy/ 
 
